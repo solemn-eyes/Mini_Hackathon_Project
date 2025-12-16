@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wellness Tracker - Progress</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <nav id="sidebar">
+      <div class="sidebar-header">
+        <h2>Wellness</h2>
+        <button id="sidebar-toggle">☰</button>
+      </div>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="goals.html">Goals</a></li>
+        <li><a href="tracker.html">Tracker</a></li>
+        <li><a href="games.html">Games</a></li>
+      </ul>
+    </nav>
+    <div id="main-content">
+      <header>
+        <div class="header-left">
+          <button id="sidebar-toggle-desktop">☰</button>
+          <button id="sidebar-toggle-mobile">☰</button>
+        </div>
+        <h1>Progress Tracker</h1>
+      </header>
+      <main>
+        <section id="tracker">
+          <h2>Goals Progress</h2>
+          <canvas id="progress-chart"></canvas>
+        </section>
+      </main>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="tracker.js"></script>
+  </body>
+</html>

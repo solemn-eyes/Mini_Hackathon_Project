@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Login — Wellness</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="auth-page">
+    <main class="auth-card" role="main">
+      <h2>Welcome Back 👋</h2>
+      <p class="muted">Log in to continue your wellness journey.</p>
+      <form id="login-form" novalidate>
+        <label for="login-email">Email</label>
+        <input id="login-email" type="email" required placeholder="you@domain.com" />
+
+        <label for="login-password">Password</label>
+        <input id="login-password" type="password" required placeholder="••••••••" />
+
+        <div id="login-error" class="form-error" aria-live="polite"></div>
+
+        <button type="submit" class="primary-btn">Login</button>
+      </form>
+
+      <p class="auth-footer">Don't have an account? <a href="signup.html">Sign up</a></p>
+      <p class="auth-footer"><a href="index.html" class="back-btn">Back to Home</a></p>
+    </main>
+
+    <script src="auth.js" defer></script>
+  </body>
+</html>

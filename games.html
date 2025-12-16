@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wellness Tracker - Games</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <nav id="sidebar">
+      <div class="sidebar-header">
+        <h2>Wellness</h2>
+        <button id="sidebar-toggle">☰</button>
+      </div>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="goals.html">Goals</a></li>
+        <li><a href="tracker.html">Tracker</a></li>
+        <li><a href="games.html">Games</a></li>
+      </ul>
+    </nav>
+    <div id="main-content">
+      <header>
+        <div class="header-left">
+          <button id="sidebar-toggle-desktop">☰</button>
+          <button id="sidebar-toggle-mobile">☰</button>
+        </div>
+        <h1>Games & Activities</h1>
+      </header>
+      <main>
+        <section id="game-container">
+          <h2>Select a Game</h2>
+          <div id="game-cards" class="game-cards">
+            <div class="game-card" data-game="tic-tac-toe">
+              <div class="game-icon">🎯</div>
+              <h3>Tic Tac Toe</h3>
+              <p>Play against AI</p>
+            </div>
+            <div class="game-card" data-game="memory">
+              <div class="game-icon">🧠</div>
+              <h3>Memory Game</h3>
+              <p>Match the pairs</p>
+            </div>
+            <div class="game-card" data-game="sudoku">
+              <div class="game-icon">🔢</div>
+              <h3>Sudoku</h3>
+              <p>Number puzzle</p>
+            </div>
+            <div class="game-card" data-game="word-search">
+              <div class="game-icon">🔤</div>
+              <h3>Word Search</h3>
+              <p>Find the words</p>
+            </div>
+          </div>
+        </section>
+        <section id="tic-tac-toe" class="game-section hidden">
+          <div class="game-header">
+            <h2>Tic Tac Toe</h2>
+            <button class="back-btn">← Back</button>
+          </div>
+          <div class="game-mode-selector">
+            <button class="mode-btn active" data-mode="ai">Play vs AI</button>
+            <button class="mode-btn" data-mode="human">Play vs Human</button>
+          </div>
+          <div class="game-content">
+            <div class="board">
+              <div class="cell" data-index="0"></div>
+              <div class="cell" data-index="1"></div>
+              <div class="cell" data-index="2"></div>
+              <div class="cell" data-index="3"></div>
+              <div class="cell" data-index="4"></div>
+              <div class="cell" data-index="5"></div>
+              <div class="cell" data-index="6"></div>
+              <div class="cell" data-index="7"></div>
+              <div class="cell" data-index="8"></div>
+            </div>
+            <div class="game-result"></div>
+            <button class="reset-btn">New Game</button>
+          </div>
+        </section>
+        <section id="memory-game" class="game-section hidden">
+          <div class="game-header">
+            <h2>Memory Game</h2>
+            <button class="back-btn">← Back</button>
+          </div>
+          <div class="game-content">
+            <div class="memory-board"></div>
+            <div class="game-stats">
+              <p>Moves: <span id="memory-moves">0</span></p>
+              <p>Time: <span id="memory-time">0s</span></p>
+            </div>
+            <button class="reset-btn">New Game</button>
+          </div>
+        </section>
+        <section id="sudoku" class="game-section hidden">
+          <div class="game-header">
+            <h2>Sudoku</h2>
+            <button class="back-btn">← Back</button>
+          </div>
+          <div class="game-content">
+            <div class="sudoku-board"></div>
+            <div class="sudoku-controls">
+              <button class="reset-btn">New Puzzle</button>
+              <button id="solve-btn">Solve</button>
+              <button id="hint-btn">Hint</button>
+            </div>
+          </div>
+        </section>
+        <section id="word-search" class="game-section hidden">
+          <div class="game-header">
+            <h2>Word Search</h2>
+            <button class="back-btn">← Back</button>
+          </div>
+          <div class="game-content">
+            <div class="word-grid"></div>
+            <div id="word-list"></div>
+            <button class="reset-btn">New Puzzle</button>
+          </div>
+        </section>
+      </main>
+    </div>
+    <script src="games-new.js"></script>
+  </body>
+</html>
